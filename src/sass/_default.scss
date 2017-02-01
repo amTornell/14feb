@@ -1,0 +1,259 @@
+body{
+	font-family: $font-base;
+    background: $white;
+    color: $blue-dark;
+    height: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    line-height: 1.46;
+}
+
+html {
+  height: 100%;
+}
+
+
+a{
+	text-decoration: none;
+	color: $blue-dark;
+	&:hover{
+		color: $acento;
+	}
+}
+.row{
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.responsive-image{
+	max-width: 100%;
+}
+.float-left{
+	float: left;
+}
+.float-right{
+	float: right;
+}
+.text-centered{
+	text-align: center;
+}
+small{
+	font-size: 70%;
+}
+
+.item-centered{
+	display: block;
+	margin: 0 auto;
+	float: none;
+}
+
+.hide{
+	display: none;
+
+}
+
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  iframe, object, embed, video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/*****************************
+
+		TEXTOS
+
+******************************/
+
+.main-title{
+	margin: 10px 0;
+	text-align: center;
+	font-family: $font-thin;
+	span{
+		color: $acento;
+	}
+}
+
+.text-centered{
+	text-align: center;
+}
+
+p{
+	@include bp-small {
+      font-size: 13px;
+    }
+
+}
+
+h1{
+	font-size: 24px;
+	font-family: $font-medium;
+	@include bp-small {
+      font-size: 22px;
+    }
+}
+
+h2{
+	font-size: 21px;
+	font-family: $font-thin;
+	@include bp-small {
+      font-size: 15px;
+    }
+}
+
+h3{
+	font-size: 16px;
+	@include bp-small {
+      font-size: 14px;
+    }
+	
+}
+
+h4{
+	font-size: 18px;
+	@include bp-small {
+      font-size: 15px;
+    }
+}
+/*****************************
+
+		Modal
+******************************/
+
+.modal-content{
+	background: $blue-dark;
+	.modal-title{
+		text-align: center;
+	}
+	.modal-body{
+		font-size: 80%;
+	}
+}
+.modal-backdrop.in {
+//	opacity: 0.9;
+}
+.modal-terminos-txt{
+	ul{
+		padding-left: 25px;
+	}
+	p{
+		padding-bottom: 7px;
+		strong{
+			font-family: $font-medium;
+		}
+	}
+
+}
+/*****************************
+
+		Sponsors
+
+******************************/
+
+
+/*****************************
+
+		footer
+
+******************************/
+
+
+
+/*****************************
+
+		extras
+
+******************************/
+
+
+
+
+
+
+body {
+	background: url('../../images/14febrero_bg.jpg') repeat bottom center; 
+	background-size: cover;
+
+}
+
+/* Preloader */
+#preloader {
+	position: relative;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	//background-color:#fff; /* change if the mask should be a color other than white */
+	z-index:99; /* makes sure it stays on top */
+	padding-top: 50px;
+}
+
+#status {
+	width:200px;
+	height:200px;
+	position:absolute;
+	left:50%; /* centers the loading animation horizontally on the screen */
+	top:50%; /* centers the loading animation vertically on the screen */
+	background-image:url(../../images/status.gif); /* path to your loading animation */
+	background-repeat:no-repeat;
+	background-position:center;
+	margin:-100px 0 0 -100px; /* is width and height divided by two */
+}
+
+.the-content, .the-content-big{
+	max-width: 500px;
+	background: green;
+	margin-top: 20px;
+	text-align: center;
+	padding: 0 20px;
+}
+
+.the-content-big{
+	max-width: 700px;
+	background: none;
+}
+.Aligner {
+  display: flex;
+  align-items: center;
+  flex-direction: column; 
+  min-height: 100%;
+  justify-content: center;
+}
+
+.Aligner-item {
+  flex: 1;   
+}
+
+.Aligner-item--top {
+  align-self: flex-start;
+  flex: none; /* 2 */
+}
+
+.Aligner-item--bottom {
+  align-self: flex-end;
+  width: 100%;
+  flex: none; /* 2 */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 20px;
+  p{
+  	font-size: 80%;
+  }
+}
+
+.Aligner-item--fixed {
+  flex: none;
+ // max-width: 50%;
+}
+

@@ -1,0 +1,42 @@
+
+/*****************
+	header
+
+******************/
+
+header{
+	width: 100%;
+	position: relative;
+	max-height: 80px;
+	background: $blue-dark;
+	text-align: center;
+	.logo-container{
+		max-width: 480px;
+		padding: 20px 0;
+	}
+	@include bp-small {
+		
+
+    }
+
+}
+
+.logo{
+		position: relative;
+		margin: 0px auto 0;
+		display: block;
+		max-width:400px;
+		img{
+			display: block;
+			margin: 0 auto;
+			max-width: 100%;
+		}
+		@media screen and (min-width:300px) and (max-width: 800px){
+		 max-width:290px;
+		}
+
+		 @include bp-small {
+		 //	width: 300px;
+		 //	padding-top: 10px;
+		 }
+}
