@@ -329,20 +329,7 @@ header {
   text-align: center; }
   header .logo-container {
     max-width: 480px;
-    padding: 20px 0; }
-
-.logo {
-  position: relative;
-  margin: 0px auto 0;
-  display: block;
-  max-width: 400px; }
-  .logo img {
-    display: block;
-    margin: 0 auto;
-    max-width: 100%; }
-  @media screen and (min-width: 300px) and (max-width: 800px) {
-    .logo {
-      max-width: 290px; } }
+    padding: 20px; }
 
 .btn-main {
   background-color: #007EC8;
@@ -395,7 +382,7 @@ header {
     opacity: 1; }
   .btn-main span {
     font-family: Arial, Helvetica;
-    letter-spacing: 1px; }
+    letter-spacing: 0px; }
 
 .link-basic:hover {
   color: #39D7EF; }
@@ -445,6 +432,9 @@ form input[type="text"], form input[type="email"], form textarea {
 form textarea {
   resize: vertical;
   min-height: 80px; }
+
+form .parsley-error {
+  border: 1px solid #FF0000; }
 
 form label {
   width: 100%; }
@@ -502,15 +492,11 @@ input.parsley-success, select.parsley-success, textarea.parsley-success, .alert-
   border: 0;
   border-radius: 0; }
 
-input.parsley-error, select.parsley-error, textarea.parsley-error, .alert-danger {
-  color: #fff;
-  background-color: red;
-  border: 0;
-  border-radius: 0; }
-  input.parsley-error h2, select.parsley-error h2, textarea.parsley-error h2, .alert-danger h2 {
-    font-family: "Neue Haas Unica W01 Medium It"; }
-  input.parsley-error p, select.parsley-error p, textarea.parsley-error p, .alert-danger p {
-    font-size: 14px !important; }
+input.parsley-error h2, select.parsley-error h2, textarea.parsley-error h2, .alert-danger h2 {
+  font-family: "Neue Haas Unica W01 Medium It"; }
+
+input.parsley-error p, select.parsley-error p, textarea.parsley-error p, .alert-danger p {
+  font-size: 14px !important; }
 
 .alert-success, .alert-danger, .alert-advice, .alert-advice1, .alert-advice3, .alert-message, .alert-message2 {
   text-align: center; }
@@ -530,8 +516,9 @@ input.parsley-error, select.parsley-error, textarea.parsley-error, .alert-danger
     opacity: 1;
     z-index: 500;
     position: relative;
-    background: red;
-    padding: 5px; }
+    padding: 5px;
+    color: #FF0000;
+    text-align: left; }
 
 li.parsley-required {
   display: block;
@@ -618,7 +605,8 @@ input[type="url"],
 textarea {
   font-size: 1em;
   width: 100%;
-  color: #0D1023; }
+  color: #0D1023;
+  font-family: Arial, Helvetica, sans-serif; }
 
 label {
   color: #BF060D;
@@ -644,9 +632,6 @@ select {
 textarea:focus,
 input:focus {
   outline: none; }
-
-.error {
-  color: orangered; }
 
 input.send-btn.guardar {
   border: 0;
